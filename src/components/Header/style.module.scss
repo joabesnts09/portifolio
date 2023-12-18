@@ -1,7 +1,5 @@
-import styled from "styled-components";
-
-export const HeaderStyled = styled.header`
-  .container {
+.containerHeader {
+  .containerBox {
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +39,7 @@ export const HeaderStyled = styled.header`
         margin-top: 0.3125rem;
 
         position: relative;
-        transition: .3s;
+        transition: 0.3s;
       }
     }
 
@@ -50,6 +48,13 @@ export const HeaderStyled = styled.header`
       align-items: center;
       gap: 2rem;
       list-style: none;
+    }
+
+    li {
+      padding: 2px;
+      &.actived {
+        border-bottom: 4px solid var(--color-gree1);
+      }
     }
 
     a {
@@ -78,20 +83,22 @@ export const HeaderStyled = styled.header`
   .scroll {
     background-color: var(--color-blue3);
     padding: 1.25rem 10%;
+  }
 
-    @media (max-width: 1180px) {
+  @media (max-width: 1180px) {
+    .scroll {
       padding: 1.25rem 5% !important;
     }
   }
 
   @media (max-width: 1180px) {
-    .container {
+    .containerBox {
       padding: 2.75rem 5%;
     }
   }
 
   @media (max-width: 999px) {
-    .container {
+    .containerBox {
       background-color: var(--color-blue3);
       padding: 2rem 5%;
 
@@ -133,33 +140,53 @@ export const HeaderStyled = styled.header`
         pointer-events: none;
 
         clip-path: circle(100px at 90% -15%);
-        transition: .7s ease-out;
+        transition: 0.7s ease-out;
 
         li {
+          &.actived {
+            opacity: 0;
+          }
+
           a {
             opacity: 0;
           }
         }
 
         li:nth-child(1) {
+          &.actived {
+            transition: 0.5s 0.2s;
+          }
+
           a {
             transition: 0.5s 0.2s;
           }
         }
 
         li:nth-child(2) {
+          &.actived {
+            transition: 0.5s 0.4s;
+          }
+
           a {
             transition: 0.5s 0.4s;
           }
         }
 
         li:nth-child(3) {
+          &.actived {
+            transition: 0.5s 0.6s;
+          }
+
           a {
             transition: 0.5s 0.6s;
           }
         }
 
         li:nth-child(4) {
+          &.actived {
+            transition: 0.5s 0.8s;
+          }
+
           a {
             transition: 0.5s 0.8s;
           }
@@ -170,22 +197,24 @@ export const HeaderStyled = styled.header`
           pointer-events: all;
 
           li {
+            &.actived {
+              opacity: 1;
+            }
+
             a {
               opacity: 1;
             }
           }
-
-
         }
       }
     }
   }
 
   @media (max-width: 360px) {
-    .container{
+    .containerBox {
       .logo {
         font-size: 1.3rem;
       }
     }
   }
-`;
+}

@@ -8,6 +8,7 @@
   --color-blue4: #3A506B;
   --color-blue5: #5bc0be;
   --color-blue6: #6fffe9;
+  --color-blue-kezie: #3532ff;
 
 
   --color-gree1: #06fc75;
@@ -36,15 +37,36 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-image: url(../../public//assets/backgroud.png);
+  background-image: url(../../public//assets/backgroud2.png);
 
-  background-position: 100% 0;
+  background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 200vh;
   
+  
 }
+
+@media (max-width: 1444px) {
+  body {
+    background-image: url(../../public//assets/backgroud3.png);
+  }
+}
+
+
+@media (max-width: 1100px) {
+  body {
+    background-image: url(../../public//assets/backgroud4.png);
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: url(../../public//assets/backgroud5.png);
+  }
+}
+
 
 a {
   color: inherit;

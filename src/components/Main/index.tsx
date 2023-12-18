@@ -1,17 +1,19 @@
-'use client'
-import { AboutMe } from "./AboutMe"
-import { MainStyled } from "./style"
+import { AboutMe } from '../AboutMe'
+import { Skills } from '../Skills'
+import { BoxArrowUp } from './BoxArroeUp'
+import styles from './styles.module.scss'
 
 export const Main = () => {
-
     return (
         <>
-            <MainStyled>
-                <div className="void"></div>
+            <main className={styles.container}>
+                <div className={styles.void}></div>
                 <section>
-                    <AboutMe/>
+                    <AboutMe />
+                    <Skills />
                 </section>
-            </MainStyled>
+                <BoxArrowUp />
+            </main>
         </>
     )
 }

@@ -1,7 +1,7 @@
 "use client";
-// import { useMenuMobile } from "@/hooks/useMenuMobile";
 import { useScroll } from "../../hooks/useScroll";
-import { HeaderStyled } from "./styles";
+import styles from './style.module.scss'
+import '../../styles/index.scss'
 import { Play } from 'next/font/google'
 
 const play = Play({ 
@@ -11,45 +11,47 @@ const play = Play({
 
 
 export const Header = () => {
+  
   useScroll()
   
   const useMenuMobile = () => {
-    const mobileMenu = document.querySelector('.mobileMenu') !
-    const navList = document.querySelector('.navigation') !
+    const mobileMenu = document.querySelector('#mobileMenu') as HTMLAnchorElement
+    
+    const navList = document.querySelector('#navigation') as HTMLAnchorElement
 
-    mobileMenu.classList.toggle('active_btn')
-    navList.classList.toggle('active')
+    mobileMenu.classList.toggle(styles.active_btn)
+    navList.classList.toggle(styles.active)
 
   }
 
   return (
     <>
-      <HeaderStyled className={play.className}>
-        <div id="header" className="container">
-          <div className="box_logo">
-            <span className="logo">&#60; <span>Joabe Santos</span> &#47; &#62;</span>
+      <header id='top' className={`${play.className} ${styles.containerHeader}`}>
+        <div id="header" className={`${styles.containerBox} `}>
+          <div className={styles.box_logo}>
+            <span className={styles.logo}>&#60; <span>Joabe Santos</span> &#47; &#62;</span>
           </div>
 
-          <button onClick={useMenuMobile} className="mobileMenu"></button>
+          <button id="mobileMenu" onClick={useMenuMobile} className={styles.mobileMenu}></button>
 
           <nav>
-            <ul className="navigation">
-              <li className="nav_item">
+            <ul id="navigation" className={styles.navigation}>
+              <li id='about' className={styles.nav_item}>
                 <a onClick={useMenuMobile} href="#aboutme">Sobre mim</a>
               </li>
-              <li className="nav_item">
-                <a onClick={useMenuMobile} href="#">Tecnologias</a>
+              <li id='skill' className={styles.nav_item}>
+                <a onClick={useMenuMobile} href="#skills">Habilidades</a>
               </li>
-              <li className="nav_item">
+              <li className={styles.nav_item}>
                 <a onClick={useMenuMobile} href="#">Projetos</a>
               </li>
-              <li className="nav_item">
+              <li className={styles.nav_item}>
                 <a onClick={useMenuMobile} href="#">Contatos</a>
               </li>
             </ul>
           </nav>
         </div>
-      </HeaderStyled>
+      </header>
     </>
   );
 };

@@ -1,0 +1,61 @@
+.container {
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    .void {
+        height: 8rem;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1240px) {
+        section {
+            max-width: 1000px;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        section {
+            max-width: 800px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        section {
+            max-width: 700px;
+        }
+    }
+
+    @media (max-width: 760px) {
+        section {
+            max-width: 560px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        section {
+            max-width: 450px;
+        }
+    }
+
+    @media (max-width: 530px) {
+        section {
+            max-width: 400px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        section {
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        section {
+            max-width: 280px;
+        }
+    }
+}
