@@ -126,6 +126,7 @@
         flex-direction: column;
         .image_profile {
             .image {
+                margin: 0 auto;
                 width: 90%;
                 height: 27.5rem;
             }
@@ -135,7 +136,7 @@
     @media (max-width: 480px) {
         .image_profile {
             .image {
-                width: 100%;
+                width: 95%;
                 height: 22.1875rem;
             }
         }
