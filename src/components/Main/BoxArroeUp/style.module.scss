@@ -15,5 +15,25 @@
         box-shadow: 0 0 15px #00bfe7;
       }
 
+
+      @media (max-width: 760px) {
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
+
+      @media (max-width: 620px) {
+        .arrowUp {
+          width: 36px;
+          height: 36px;
+        }
+      }
+
+      @media (max-width: 530px) {
+        .arrowUp {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
     }
  }
