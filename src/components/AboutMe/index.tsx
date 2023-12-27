@@ -1,5 +1,4 @@
 import Image from 'next/image'
-// import imageProfile from '../../../public/assets/imageprofile.jpeg'
 import imageProfile from '../../../public/assets/imgprof1gimp.jpg'
 import styles from './style.module.scss'
 
@@ -14,6 +13,7 @@ export const AboutMe = () => {
                         alt='image profile'
                         width={360}
                         height={435}
+                        priority={true}
                     />
                 </div>
 

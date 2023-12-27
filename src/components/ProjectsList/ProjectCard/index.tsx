@@ -2,9 +2,17 @@ import Image, { StaticImageData } from 'next/image'
 import styles from './style.module.scss'
 import imageShare from '../../../../public/assets/share-imag.png'
 
+export interface IProjectProps {
+    project: {
+        id: number
+        name: string
+        image: any
+        description: string
+        url: string
+    }
+}
 
-
-export const ProjectsCard = ({ project }) => {
+export const ProjectsCard = ({ project }: IProjectProps) => {
     return (
         <>
             <div className={styles.conatiner}>
@@ -24,7 +32,7 @@ export const ProjectsCard = ({ project }) => {
 
                 <div className={styles.boxFooter}>
                     <a target="-bland" href={project.url}>
-                        <Image src={imageShare} width={22} />
+                        <Image src={imageShare} width={22} alt='image share'/>
                         <span>Ver site</span>
                     </a>
                 </div>
