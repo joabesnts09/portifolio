@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    padding-top: 7rem;
+
+
+    .boxTitle {
+        margin-bottom: 2rem; 
+
+        h2 {
+            font-size: 3rem;
+            color: var(--text1);
+        }
+    }
+
+    .boxCard {
+        display: flex;
+        gap: 1.6rem;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 1240px)  {
+        .boxCard {
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: 1080px) {
+
+        .boxCard {
+            justify-content: center;
+            gap: 2.2rem;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .boxCard {
+            justify-content: center;
+            gap: 1.6rem;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .boxCard {
+            justify-content: center;
+            gap: 1.25rem;
+        }
+    }
+}

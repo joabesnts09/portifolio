@@ -6,12 +6,12 @@ import styles from './style.module.scss'
 export const AboutMe = () => {
     return (
         <>
-            <section className={styles.container} id="aboutme">
+            <section className={styles.container} id='aboutme'>
                 <div className={styles.image_profile}>
                     <Image
                         className={styles.image}
                         src={imageProfile}
-                        alt="image profile"
+                        alt='image profile'
                         width={360}
                         height={435}
                     />
@@ -31,9 +31,7 @@ export const AboutMe = () => {
                             Full-Stak
                         </span>{' '}
                         em formação na Kezie Academy Brasil
-                        <span className={`${styles.point} `}>
-                            .
-                        </span>
+                        <span className={`${styles.point} `}>.</span>
                     </p>
                 </div>
             </section>
