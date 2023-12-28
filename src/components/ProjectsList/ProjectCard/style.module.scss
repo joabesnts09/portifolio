@@ -2,7 +2,8 @@
     width: max-content;
     height: 36.4875rem;
     padding: 1rem;
-    background-color: var(--color-black0);
+    // background-color: var(--color-black0);
+    background-color: var(--color-border);
 
     .boxDescription {
         width: 21.875rem;
@@ -23,7 +24,7 @@
 
     .boxFooter {
         margin-top: 1.5rem;
-        border-top: 1px solid var(--color-border);
+        border-top: 1px solid var(--color-black0);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -72,10 +73,7 @@
         }
 
     }
-
-    // @media (max-width: 1080px) {
-        
-    // }
+    
     @media (max-width: 1080px) {
         .boxImg {
 
