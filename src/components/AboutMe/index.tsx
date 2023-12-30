@@ -1,16 +1,19 @@
 import Image from 'next/image'
 import imageProfile from '../../../public/assets/imgprof1gimp.jpg'
 import styles from './style.module.scss'
+// import imgGIt from '../../../public/assets/github-octocat.svg'
+import imgGIt from '../../../public/assets/github.svg'
+import imgLinkedin from '../../../public/assets/linkedin.svg'
 
 export const AboutMe = () => {
     return (
         <>
-            <section className={styles.container} id='aboutme'>
+            <section className={styles.container} id="aboutme">
                 <div className={styles.image_profile}>
                     <Image
                         className={styles.image}
                         src={imageProfile}
-                        alt='image profile'
+                        alt="image profile"
                         width={360}
                         height={435}
                         priority={true}
@@ -33,6 +36,17 @@ export const AboutMe = () => {
                         em formação na Kezie Academy Brasil
                         <span className={`${styles.point} `}>.</span>
                     </p>
+
+                    <div className={styles.BoxContacts}>
+                        <a className={styles.contact} href='https://github.com/joabesnts09' target='blank'>
+                            <Image src={imgGIt} width={70} alt='image git hub'/>
+                            <span>Git Hub</span>
+                        </a>
+                        <a className={styles.contact} href='https://www.linkedin.com/in/joabe-santos-5a20a3206/' target='blank'>
+                            <Image src={imgLinkedin} width={70} alt='image linkedin'/>
+                            <span>Linkedin</span>
+                        </a>
+                    </div>
                 </div>
             </section>
         </>

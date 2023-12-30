@@ -45,9 +45,9 @@ export const Header = () => {
               <li id="project" className={styles.nav_item}>
                 <a onClick={useMenuMobile} href="#projects">Projetos</a>
               </li>
-              <li className={styles.nav_item}>
+              {/* <li className={styles.nav_item}>
                 <a onClick={useMenuMobile} href="#">Contatos</a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
