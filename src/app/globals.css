@@ -71,7 +71,7 @@ body {
 
 @media (max-width: 480px) {
   body {
-    height: 500vh;
+    height: 600vh;
   }
 }
 a {
