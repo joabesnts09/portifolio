@@ -88,6 +88,10 @@
     @media (max-width: 1240px) {
         .description_profile {
             line-height: 3.3rem;
+
+            .BoxContacts {
+                line-height: initial;
+            }
         }
     }
 
@@ -174,41 +178,12 @@
             }
         }
 
-
-        
-        // .BoxContacts {
-
-        //     .contact {
-
-        //         span {
-        //             display: flex;
-        //         }
-        //    }
-        // }
-
     }
 
     @media (max-width: 530px) {
 
         .description_profile {
             height: 200px;
-
-            // .BoxContacts {
-
-            //     .contact {
-            //         padding: .1rem !important;
-            //         gap: .1rem !important;
-    
-            //         span {
-            //             display: none;
-            //         }
-    
-            //         img {
-            //             width: 40px;
-            //             height: 40px;
-            //         }
-            //     }
-            // }
         }
     
         flex-direction: column;

@@ -1,5 +1,5 @@
 .container {
-    height: 400vh;
+    height: 350vh;
     background-color: rgba(0, 0, 0, 0.9);
 
     .void {
@@ -36,6 +36,7 @@
     }
 
     @media (max-width: 620px) {
+        height: 400vh;
         section {
             max-width: 450px;
         }
