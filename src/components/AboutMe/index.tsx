@@ -41,11 +41,11 @@ export const AboutMe = () => {
                     <div className={styles.BoxContacts}>
                         <a className={styles.contact} href='https://github.com/joabesnts09' target='blank'>
                             <Image src={imgGIt} width={70} alt='image git hub'/>
-                            <span>Git Hub</span>
+                            {/* <span>Git Hub</span> */}
                         </a>
                         <a className={styles.contact} href='https://www.linkedin.com/in/joabe-santos-5a20a3206/' target='blank'>
                             <Image src={imgLinkedin} width={70} alt='image linkedin'/>
-                            <span>Linkedin</span>
+                            {/* <span>Linkedin</span> */}
                         </a>
                     </div>
 
