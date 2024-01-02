@@ -81,6 +81,27 @@
                 }
             }
         }
+
+        .boxCv {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            a {
+                display: flex;
+                gap: .5rem;
+                border: none;
+                border-radius: 15px;
+                background-color: var(--color-blue);
+                padding: 1rem 2rem;
+                font-size: 1.4rem;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 0 20px var(--color-blue-hover);
+                }
+            }
+        }
     }
 
 

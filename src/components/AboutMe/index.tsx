@@ -3,6 +3,7 @@ import imageProfile from '../../../public/assets/imgprof1gimp.jpg'
 import styles from './style.module.scss'
 // import imgGIt from '../../../public/assets/github-octocat.svg'
 import imgGIt from '../../../public/assets/github.svg'
+import imgDownload from '../../../public/assets/icons-download.png'
 import imgLinkedin from '../../../public/assets/linkedin.svg'
 
 export const AboutMe = () => {
@@ -45,6 +46,13 @@ export const AboutMe = () => {
                         <a className={styles.contact} href='https://www.linkedin.com/in/joabe-santos-5a20a3206/' target='blank'>
                             <Image src={imgLinkedin} width={70} alt='image linkedin'/>
                             <span>Linkedin</span>
+                        </a>
+                    </div>
+
+                    <div className={styles.boxCv}>
+                        <a href='https://drive.google.com/file/d/1Z-IsW37UcgS202xzjIwiOMXfbpmlLnhs/view?usp=sharing' target='blank'>
+                            <p>Currículo</p>
+                            <Image src={imgDownload} width={22} alt='image download'/>
                         </a>
                     </div>
                 </div>
