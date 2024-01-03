@@ -50,7 +50,7 @@ export const AboutMe = () => {
                     </div>
 
                     <div className={styles.boxCv}>
-                        <a href='https://drive.google.com/file/d/1Z-IsW37UcgS202xzjIwiOMXfbpmlLnhs/view?usp=sharing' target='blank'>
+                        <a href='https://drive.google.com/file/d/1otkxTcYprIRykCppHG4Hb7x21MfiLEyh/view?usp=sharing' target='blank'>
                             <p>Currículo</p>
                             <Image src={imgDownload} width={22} alt='image download'/>
                         </a>
