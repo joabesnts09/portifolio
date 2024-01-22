@@ -1,57 +1,73 @@
-"use client";
-import { useScroll } from "../../hooks/useScroll";
+'use client'
+import { useScroll } from '../../hooks/useScroll'
 import styles from './style.module.scss'
 import '../../styles/index.scss'
 import { Play } from 'next/font/google'
 
-const play = Play({ 
-  weight: ['400', '700'],
-  subsets: ['latin'] 
+const play = Play({
+    weight: ['400', '700'],
+    subsets: ['latin'],
 })
 
-
 export const Header = () => {
-  
-  useScroll()
-  
-  const useMenuMobile = () => {
-    const mobileMenu = document.querySelector('#mobileMenu') as HTMLAnchorElement
-    
-    const navList = document.querySelector('#navigation') as HTMLAnchorElement
+    useScroll()
 
-    mobileMenu.classList.toggle(styles.active_btn)
-    navList.classList.toggle(styles.active)
+    const useMenuMobile = () => {
+        const mobileMenu = document.querySelector(
+            '#mobileMenu'
+        ) as HTMLAnchorElement
 
-  }
+        const navList = document.querySelector(
+            '#navigation'
+        ) as HTMLAnchorElement
 
-  return (
-    <>
-      <header id='top' className={`${play.className} ${styles.containerHeader}`}>
-        <div id="header" className={`${styles.containerBox} `}>
-          <div className={styles.box_logo}>
-            <span className={styles.logo}>&#60; <span>Joabe Santos</span> &#47; &#62;</span>
-          </div>
+        mobileMenu.classList.toggle(styles.active_btn)
+        navList.classList.toggle(styles.active)
+    }
 
-          <button id="mobileMenu" onClick={useMenuMobile} className={styles.mobileMenu}></button>
+    return (
+        <>
+            <header
+                id="top"
+                className={`${play.className} ${styles.containerHeader}`}
+            >
+                <div id="header" className={`${styles.containerBox} `}>
+                    <div className={styles.box_logo}>
+                        <span className={styles.logo}>
+                            &#60; <span>Joabe Santos</span> &#47; &#62;
+                        </span>
+                    </div>
 
-          <nav>
-            <ul id="navigation" className={styles.navigation}>
-              <li id='about' className={styles.nav_item}>
-                <a onClick={useMenuMobile} href="#aboutme">Sobre mim</a>
-              </li>
-              <li id='skill' className={styles.nav_item}>
-                <a onClick={useMenuMobile} href="#skills">Habilidades</a>
-              </li>
-              <li id="project" className={styles.nav_item}>
-                <a onClick={useMenuMobile} href="#projects">Projetos</a>
-              </li>
-              {/* <li className={styles.nav_item}>
+                    <button
+                        id="mobileMenu"
+                        onClick={useMenuMobile}
+                        className={styles.mobileMenu}
+                    ></button>
+
+                    <nav>
+                        <ul id="navigation" className={styles.navigation}>
+                            <li id="about" className={styles.nav_item}>
+                                <a onClick={useMenuMobile} href="#aboutme">
+                                    Sobre mim
+                                </a>
+                            </li>
+                            <li id="skill" className={styles.nav_item}>
+                                <a onClick={useMenuMobile} href="#skills">
+                                    Habilidades
+                                </a>
+                            </li>
+                            <li id="project" className={styles.nav_item}>
+                                <a onClick={useMenuMobile} href="#projects">
+                                    Projetos
+                                </a>
+                            </li>
+                            {/* <li className={styles.nav_item}>
                 <a onClick={useMenuMobile} href="#">Contatos</a>
               </li> */}
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </>
-  );
-};
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </>
+    )
+}

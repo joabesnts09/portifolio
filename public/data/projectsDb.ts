@@ -26,7 +26,7 @@ export const projectsList: IProject[]  = [
         image: imgParallax,
         description:
             'Parallax é um efeito aplicado no movimento de algo em uma aplicação, nesse caso o efeito é aplicado no scroll do site. É um efeito muito elegante e que passa um impressão de modernidade.',
-        url: 'https://effeito-prarallax-joabesnts09-bry875rqv-kenzie-hub-joabesnts09.vercel.app/',
+        url: 'https://effeito-prarallax-joabesnts09-ca6p-62pt9gvrw-joabesnts09.vercel.app/',
     },
     {
     id: 3,
@@ -34,7 +34,7 @@ export const projectsList: IProject[]  = [
     image: imgNuKenzie,
     description:
         'O Nu Kenzie é uma aplicação que simula transações bancárias, o usuário pode escolher o tipo de transação se de entrada ou despesa, e por fim faz um resumo finaceiros de todas as transações',
-    url: 'https://nu-kenzie-joabesnts09-im6hjl4ss-kenzie-hub-joabesnts09.vercel.app/',
+    url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
     }
 
 ]
