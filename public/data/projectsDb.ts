@@ -33,7 +33,7 @@ export const projectsList: IProject[]  = [
     name: 'Nu Kenzie',
     image: imgNuKenzie,
     description:
-        'O Nu Kenzie é uma aplicação que simula transações bancárias, o usuário pode escolher o tipo de transação se de entrada ou despesa, e por fim faz um resumo finaceiros de todas as transações',
+        'O Nu Kenzie é uma aplicação que simula transações bancárias, o usuário pode escolher o tipo de transação de entrada ou despesa, e por fim faz um resumo finaceiros de todas as transações.',
     url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
     }
 
