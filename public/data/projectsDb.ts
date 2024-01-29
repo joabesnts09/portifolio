@@ -44,6 +44,6 @@ export const projectsList: IProject[] = [
         image: imgGtaV,
         description:
             'Esse projeto foi feito em uma maratona de programação, inicialmente usando HTML, CSS e JavaScript Vanila, eu quis ir além e fiz usando React.Js + Styled-Components, e ficou sensacional.',
-        url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
+        url: 'https://maratona-dev-em-dobro.vercel.app/',
     },
 ]
