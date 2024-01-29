@@ -2,6 +2,7 @@ import imgKezieHub from '../assets/projectImg/kenzieHub.png'
 import imgParallax from '../assets/projectImg/parallax.png'
 import imgNuKenzie from '../assets/projectImg/nuKenzie.png'
 import imgGtaV from '../assets/projectImg/gtaV.png'
+import { StaticImageData } from 'next/image'
 
 
 export interface IProject {
