@@ -1,7 +1,8 @@
 import imgKezieHub from '../assets/projectImg/kenzieHub.png'
 import imgParallax from '../assets/projectImg/parallax.png'
 import imgNuKenzie from '../assets/projectImg/nuKenzie.png'
-import { StaticImageData } from 'next/image'
+import imgGtaV from '../assets/projectImg/gtaV.png'
+
 
 export interface IProject {
     id: number
@@ -11,7 +12,7 @@ export interface IProject {
     url: string
 }
 
-export const projectsList: IProject[]  = [
+export const projectsList: IProject[] = [
     {
         id: 1,
         name: 'Kenzie Hub',
@@ -29,12 +30,20 @@ export const projectsList: IProject[]  = [
         url: 'https://effeito-prarallax-joabesnts09-ca6p-62pt9gvrw-joabesnts09.vercel.app/',
     },
     {
-    id: 3,
-    name: 'Nu Kenzie',
-    image: imgNuKenzie,
-    description:
-        'O Nu Kenzie é uma aplicação que simula transações bancárias, o usuário pode escolher o tipo de transação de entrada ou despesa, e por fim faz um resumo finaceiros de todas as transações.',
-    url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
-    }
+        id: 3,
+        name: 'Nu Kenzie',
+        image: imgNuKenzie,
+        description:
+            'O Nu Kenzie é uma aplicação que simula transações bancárias, o usuário pode escolher o tipo de transação de entrada ou despesa, e por fim faz um resumo finaceiros de todas as transações.',
+        url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
+    },
 
+    {
+        id: 4,
+        name: 'Clone site GTA V',
+        image: imgGtaV,
+        description:
+            'Esse projeto foi feito em uma maratona de programação, inicialmente usando HTML, CSS e JavaScript Vanila, eu quis ir além e fiz usando React.Js + Styled-Components, e ficou sensacional.',
+        url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
+    },
 ]
