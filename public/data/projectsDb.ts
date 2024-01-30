@@ -44,7 +44,7 @@ export const projectsList: IProject[] = [
         name: 'Clone site GTA V',
         image: imgGtaV,
         description:
-            'Esse projeto foi feito em uma maratona de programação, inicialmente usando HTML, CSS e JavaScript Vanila, eu quis ir além e fiz usando React.Js + Styled-Components, e ficou sensacional.',
+            'Esse projeto foi feito em uma maratona de programação, inicialmente usando HTML, CSS e JavaScript Vanilla, eu quis ir além e fiz usando React.Js + Styled-Components, e ficou sensacional.',
         url: 'https://maratona-dev-em-dobro.vercel.app/',
     },
 ]
