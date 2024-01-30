@@ -22,14 +22,14 @@ export const projectsList: IProject[] = [
             'O Kenzie Hub é uma aplicação que você pode adicionar as tecnologias que você domina, e de acordo com seus conhecimentos você pode colocar o nível experiencia de cada uma delas.',
         url: 'https://react-entrega-kenzie-hub-joabesnts09-eta.vercel.app/',
     },
-    {
-        id: 2,
-        name: 'Efeito Parallax',
-        image: imgParallax,
-        description:
-            'Parallax é um efeito aplicado no movimento de algo em uma aplicação, nesse caso o efeito é aplicado no scroll do site. É um efeito muito elegante e que passa um impressão de modernidade.',
-        url: 'https://effeito-prarallax-joabesnts09-ca6p-62pt9gvrw-joabesnts09.vercel.app/',
-    },
+    // {
+    //     id: 2,
+    //     name: 'Efeito Parallax',
+    //     image: imgParallax,
+    //     description:
+    //         'Parallax é um efeito aplicado no movimento de algo em uma aplicação, nesse caso o efeito é aplicado no scroll do site. É um efeito muito elegante e que passa um impressão de modernidade.',
+    //     url: 'https://effeito-prarallax-joabesnts09-ca6p-62pt9gvrw-joabesnts09.vercel.app/',
+    // },
     {
         id: 3,
         name: 'Nu Kenzie',
