@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import imageProfile from '../../../public/assets/imgprof1gimp.jpg'
 import styles from './style.module.scss'
-// import imgGIt from '../../../public/assets/github-octocat.svg'
+
 import imgGIt from '../../../public/assets/github.svg'
 import imgDownload from '../../../public/assets/icons-download.png'
 import imgLinkedin from '../../../public/assets/linkedin.svg'
