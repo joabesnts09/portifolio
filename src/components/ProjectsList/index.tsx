@@ -11,7 +11,7 @@ export const ProjectsList = () => {
                 </div>
                 <div className={styles.boxCard}>
                     {projectsList.map((project) => (
-                        <ProjectsCard key={project.id} project={project} />
+                        <ProjectsCard buttonText={project.type === 'Front-End'? 'Ver site': 'Ver repositório'} key={project.id} project={project} />
                     ))}
                 </div>
             </section>

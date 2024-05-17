@@ -3,6 +3,7 @@ import styles from './style.module.scss'
 import imageShare from '../../../../public/assets/share-imag.png'
 
 export interface IProjectProps {
+    buttonText: string
     project: {
         id: number
         name: string
@@ -12,7 +13,7 @@ export interface IProjectProps {
     }
 }
 
-export const ProjectsCard = ({ project }: IProjectProps) => {
+export const ProjectsCard = ({buttonText, project }: IProjectProps) => {
     return (
         <>
             <div className={styles.conatiner}>
@@ -33,7 +34,7 @@ export const ProjectsCard = ({ project }: IProjectProps) => {
                 <div className={styles.boxFooter}>
                     <a target="-bland" href={project.url}>
                         <Image src={imageShare} width={22} alt='image share'/>
-                        <span>Ver site</span>
+                        <span>{buttonText}</span>
                     </a>
                 </div>
             </div>
