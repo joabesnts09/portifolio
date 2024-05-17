@@ -1,9 +1,7 @@
 import imgKezieHub from '../assets/projectImg/kenzieHub.png'
-import imgParallax from '../assets/projectImg/parallax.png'
-import imgNuKenzie from '../assets/projectImg/nuKenzie.png'
+import imgApiCourses from '../assets/projectImg/api-course.png'
 import imgGtaV from '../assets/projectImg/gtaV.png'
 import { StaticImageData } from 'next/image'
-
 
 export interface IProject {
     id: number
@@ -22,29 +20,20 @@ export const projectsList: IProject[] = [
             'O Kenzie Hub é uma aplicação que você pode adicionar as tecnologias que você domina, e de acordo com seus conhecimentos você pode colocar o nível experiencia de cada uma delas.',
         url: 'https://react-entrega-kenzie-hub-joabesnts09-eta.vercel.app/',
     },
-    // {
-    //     id: 2,
-    //     name: 'Efeito Parallax',
-    //     image: imgParallax,
-    //     description:
-    //         'Parallax é um efeito aplicado no movimento de algo em uma aplicação, nesse caso o efeito é aplicado no scroll do site. É um efeito muito elegante e que passa um impressão de modernidade.',
-    //     url: 'https://effeito-prarallax-joabesnts09-ca6p-62pt9gvrw-joabesnts09.vercel.app/',
-    // },
     {
-        id: 3,
-        name: 'Nu Kenzie',
-        image: imgNuKenzie,
-        description:
-            'O Nu Kenzie é uma aplicação que simula transações bancárias, o usuário pode escolher o tipo de transação de entrada ou despesa, e por fim faz um resumo finaceiros de todas as transações.',
-        url: 'https://react-entrega-s1-template-nu-kenzie-joabesnts09-hdo8ee6xx.vercel.app/',
-    },
-
-    {
-        id: 4,
+        id: 2,
         name: 'Clone site GTA V',
         image: imgGtaV,
         description:
             'Esse projeto foi feito em uma maratona de programação, inicialmente usando HTML, CSS e JavaScript Vanilla, eu quis ir além e fiz usando React.Js + Styled-Components, e ficou sensacional.',
         url: 'https://maratona-dev-em-dobro.vercel.app/',
+    },
+    {
+        id: 3,
+        name: 'API: gerenciamento do cursos',
+        image: imgApiCourses,
+        description:
+            'Uma API que é possível cadastrar um usuário que que pode ser um estudante, instrutor ou administrador que pode criar cursos, conteúdos e adicionar estudantes nos cursos. - Tecnologias: Python, Django',
+        url: 'https://github.com/Kenzie-Academy-Brasil-Developers/projeto-studante-courses-joabesnts09',
     },
 ]
