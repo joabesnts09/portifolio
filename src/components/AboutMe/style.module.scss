@@ -264,11 +264,13 @@
             .BoxContacts {
                 left: 0;
                 bottom: 0 !important;
+    
             }
 
             .boxCv {
                 left: inherit;
                 right: 0;
+                bottom: 0;
                 a {
                     flex-direction: row;
                     align-items: center;
