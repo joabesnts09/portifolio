@@ -3,6 +3,7 @@ import { useScroll } from '../../hooks/useScroll'
 import styles from './style.module.scss'
 import '../../styles/index.scss'
 import { Play } from 'next/font/google'
+import { motion } from 'framer-motion'
 
 const play = Play({
     weight: ['400', '700'],
@@ -27,7 +28,11 @@ export const Header = () => {
 
     return (
         <>
-            <header
+            <motion.header
+                initial={{ opacity: 0, y: -100 }}
+                animate={{opacity: 1, y: 0}}
+                exit={{ opacity: 0, y: -100 }}
+                transition={{ duration: .5 }}
                 id="top"
                 className={`${play.className} ${styles.containerHeader}`}
             >
@@ -67,7 +72,7 @@ export const Header = () => {
                         </ul>
                     </nav>
                 </div>
-            </header>
+            </motion.header>
         </>
     )
 }
