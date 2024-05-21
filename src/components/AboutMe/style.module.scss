@@ -107,8 +107,7 @@
 
     @media (max-width: 1240px) {
         .description_profile {
-            line-height: 3.3rem;
-
+            line-height: 2.1875rem;
             .BoxContacts {
                 line-height: initial;
             }
@@ -160,12 +159,25 @@
         }
 
         .description_profile {
-    
+            height: 20.1875rem;
             .paragh_intro {
                 font-size: 1.8rem;
                 font-weight: 500;
             }
-
+            .training {
+                color: var(--text1);
+                font-size: 1rem !important;
+                line-height: 1.4rem;
+    
+                .profession_training {
+                    color: var(--color-primary);
+                    text-decoration: underline;
+                }
+    
+                .school {
+                    color: var(--color-blue-kezie);
+                }
+            }
             .boxCv {
                 a {
                     flex-direction: row;
@@ -215,15 +227,19 @@
                 font-size: 1.4rem;
                 font-weight: 500;
             }
-
+            .training {
+                font-size: .6rem !important;
+                line-height: 1rem;
+            }
             .BoxContacts {
                 left: 0;
-                bottom: 40px;
+                bottom: 80px;
             }
 
             .boxCv {
                 left: 0;
                 right: inherit;
+                bottom: 40px;
 
                 a {
                     flex-direction: row;
@@ -236,31 +252,18 @@
             }
         }
 
-        .training {
-            color: var(--text1);
-            font-size: 1rem !important;
-            line-height: 1.4rem;
-
-            .profession_training {
-                color: var(--color-primary);
-                text-decoration: underline;
-            }
-
-            .school {
-                color: var(--color-blue-kezie);
-            }
-        }
+        
 
     }
 
     @media (max-width: 530px) {
 
         .description_profile {
-            height: 200px;
+        
 
             .BoxContacts {
                 left: 0;
-                bottom: 0;
+                bottom: 0 !important;
             }
 
             .boxCv {

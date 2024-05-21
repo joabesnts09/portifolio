@@ -1,16 +1,24 @@
+'use client'
 import Image from 'next/image'
 import imageProfile from '../../../public/assets/imgprof1gimp.jpg'
 import styles from './style.module.scss'
-
 import imgGIt from '../../../public/assets/github.svg'
 import imgDownload from '../../../public/assets/icons-download.png'
 import imgLinkedin from '../../../public/assets/linkedin.svg'
+import { motion } from 'framer-motion' 
+
 
 export const AboutMe = () => {
     return (
         <>
             <section className={styles.container} id="aboutme">
-                <div className={styles.image_profile}>
+                <motion.div
+                    className={`${styles.image_profile}`}
+                    initial={{ opacity: 0, y: 200, scale: .5 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 200, scale: .5 }}
+                    transition={{ duration: .5 }}
+                    >
                     <Image
                         className={styles.image}
                         src={imageProfile}
@@ -19,26 +27,40 @@ export const AboutMe = () => {
                         height={435}
                         priority={true}
                     />
-                </div>
+                </motion.div>
 
-                <div className={styles.description_profile}>
+                <motion.div
+                    className={styles.description_profile}
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: .5 }}                    
+                    >
                     <h1 className={styles.paragh_intro}>
                         Olá, meu nome é{' '}
                         <span className={styles.name}>Joabe Santos</span>, sou
                         desenvolvedor{' '}
-                        <span className={styles.profession}>Front-End</span>
+                        <span className={styles.profession}>Full-Stack</span>
                         <span className={styles.point}>.</span>
                     </h1>
                     <p className={styles.training}>
-                        Desenvolvedor{' '}
+                        Sejam bem vindos ao meu{' '}
                         <span className={styles.profession_training}>
-                            Full-Stak
+                            Portifólio
                         </span>{' '}
-                        em formação na Kezie Academy Brasil
-                        <span className={`${styles.point} `}>.</span>
+                        &#x1F596;
+                        <span className={`${styles.point} `}>.</span> {' '}
+                        Sou apaixonado por tecnologia, e a programaçào é o
+                        local perfeito para fazer o que eu tanto gosto &#x1F680;<span className={`${styles.point} `}>.</span>
                     </p>
 
-                    <div className={styles.BoxContacts}>
+                    <motion.div 
+                        className={styles.BoxContacts}
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0 }}
+                        transition={{ duration: .5}}
+                        >
                         <a className={styles.contact} href='https://github.com/joabesnts09' target='blank'>
                             <Image src={imgGIt} width={70} alt='image git hub'/>
                             {/* <span>Git Hub</span> */}
@@ -47,15 +69,21 @@ export const AboutMe = () => {
                             <Image src={imgLinkedin} width={70} alt='image linkedin'/>
                             {/* <span>Linkedin</span> */}
                         </a>
-                    </div>
+                    </motion.div>
 
-                    <div className={styles.boxCv}>
-                        <a href='https://drive.google.com/file/d/1fbuwnB7nSp5BTgpd1s7I8HBS1MpvJsBD/view?usp=sharing' target='blank'>
+                    <motion.div
+                        className={styles.boxCv}
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0 }}
+                        transition={{ duration: .5, delay: 0.1 }}
+                        >
+                        <a href='https://drive.google.com/file/d/1HO_-BTpbRVet0huX4DMs1e9OACzCTXeD/view?usp=sharing' target='blank'>
                             <p>Currículo</p>
                             <Image src={imgDownload} width={22} alt='image download'/>
                         </a>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </section>
         </>
     )

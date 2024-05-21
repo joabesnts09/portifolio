@@ -28,7 +28,9 @@ export const ProjectsCard = ({buttonText, project }: IProjectProps) => {
 
                 <div className={styles.boxDescription}>
                     <h3>{project.name}</h3>
-                    <p>{project.description}</p>
+                    <div className={styles.description}>
+                        <p>{project.description}</p>
+                    </div>
                 </div>
 
                 <div className={styles.boxFooter}>
