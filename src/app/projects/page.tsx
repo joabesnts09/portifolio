@@ -1,5 +1,5 @@
-import { MainProject } from './components/MainProjects'
-import { HeaderProject } from './components/MainProjects/HeaderProjects'
+import { MainProject } from './_components/MainProjects' 
+import { HeaderProject } from './_components/HeaderProjects' 
 
 
 export default function ProjectPage() {
@@ -7,9 +7,7 @@ export default function ProjectPage() {
     return (
         <>
             <HeaderProject />
-            <MainProject>
-
-            </MainProject>
+            <MainProject/>
         </>
     )
 

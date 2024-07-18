@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './style.module.scss'
-import iconReturn from '../../../../../../public/assets/icons/iconReturn.svg'
+import iconReturn from '../../../../../public/assets/icons/iconReturn.svg'
 import Image from 'next/image'
 import { Play } from 'next/font/google'
 
