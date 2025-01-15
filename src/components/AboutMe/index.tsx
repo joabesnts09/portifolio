@@ -63,11 +63,11 @@ export const AboutMe = () => {
                         >
                         <a className={styles.contact} href='https://github.com/joabesnts09' target='blank'>
                             <Image src={imgGIt} width={70} alt='image git hub'/>
-                            {/* <span>Git Hub</span> */}
+                            
                         </a>
                         <a className={styles.contact} href='https://www.linkedin.com/in/joabe-santos-5a20a3206/' target='blank'>
                             <Image src={imgLinkedin} width={70} alt='image linkedin'/>
-                            {/* <span>Linkedin</span> */}
+                            
                         </a>
                     </motion.div>
 
@@ -78,7 +78,7 @@ export const AboutMe = () => {
                         exit={{ opacity: 0, scale: 0 }}
                         transition={{ duration: .5, delay: 0.1 }}
                         >
-                        <a href='https://drive.google.com/file/d/1HO_-BTpbRVet0huX4DMs1e9OACzCTXeD/view?usp=sharing' target='blank'>
+                        <a href='https://drive.google.com/file/d/1oRf3qJWhwImPVrcojp0E68U9Rk6gbFBv/view?usp=sharing' target='blank'>
                             <p>Currículo</p>
                             <Image src={imgDownload} width={22} alt='image download'/>
                         </a>
