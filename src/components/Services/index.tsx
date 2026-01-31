@@ -12,7 +12,7 @@ const services: Service[] = [
     {
         title: 'Websites e Plataformas',
         description: 'Especializado no desenvolvimento de interfaces modernas e responsivas usando React, Next.js e TypeScript',
-        technologies: ['Next.js', 'Node.js', 'Express.js'],
+        technologies: ['Node.js', 'Python'],
         icon: '🖥️'
     },
     {
