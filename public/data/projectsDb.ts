@@ -1,4 +1,4 @@
-import imgKezieHub from '../assets/projectImg/kenzieHub.png'
+import imgAstronomyBlog from '../assets/projectImg/astrinimiaBlog.png'
 import imgApiCourses from '../assets/projectImg/api-course.png'
 import imgGtaV from '../assets/projectImg/gtaV.png'
 import { StaticImageData } from 'next/image'
@@ -7,7 +7,7 @@ export interface IProject {
     id: number
     name: string
     image: StaticImageData
-    type: string
+    type: 'Front-End' | 'Back-End' | 'Full-Stack'
     description: string
     url: string
 }
@@ -15,12 +15,12 @@ export interface IProject {
 export const projectsList: IProject[] = [
     {
         id: 1,
-        name: 'Kenzie Hub',
-        image: imgKezieHub,
-        type: 'Front-End',
+        name: 'Blog de Astronomia',
+        image: imgAstronomyBlog,
+        type: 'Full-Stack',
         description:
-            'O Kenzie Hub é uma aplicação que você pode adicionar as tecnologias que você domina, e de acordo com seus conhecimentos você pode colocar o nível experiencia de cada uma delas.',
-        url: 'https://react-entrega-kenzie-hub-joabesnts09-eta.vercel.app/',
+            'Blog de Astronomia com tecnologias como React, Next.js, TypeScript, Tailwind CSS, Shadcn UIm e no Back-End usei Python, Django, Django Rest Framework, PostgreSQL.',
+        url: 'https://dr-universo.vercel.app/',
     },
     {
         id: 2,

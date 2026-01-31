@@ -7,7 +7,9 @@ import iconExpress from '../assets/icons/iconExpress.svg'
 import iconNest from '../assets/icons/IconNestjs.svg'
 import nextIcon from '../assets/icons/next.svg'
 import iconAngular from '../assets/icons/iconAngular.svg'
-import iconPrisma from '../assets/icons/IconPrisma.svg'
+import iconPrisma from '../assets/icons/iconPrisma.svg'
+import iconFlask from '../assets/icons/iconFlask.svg'
+import iconDocker from '../assets/icons/iconDocker.svg'
 
 export const skillsList = [
     {
@@ -60,6 +62,16 @@ export const skillsList = [
         name: 'Prisma ORM',
         img: iconPrisma,
         id: 10
+    },
+    {
+        name: 'Flask',
+        img: iconFlask,
+        id: 11
+    },
+    {
+        name: 'Docker',
+        img: iconDocker,
+        id: 12
     }
 ]
 

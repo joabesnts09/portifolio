@@ -1,21 +1,19 @@
-import { AboutMe } from '../AboutMe'
-import { ProjectsList } from '../ProjectsList'
+import { Hero } from '../Hero'
+import { Services } from '../Services'
 import { Skills } from '../Skills'
+import { ProjectsList } from '../ProjectsList'
+import { Contact } from '../Contact'
 import { BoxArrowUp } from './BoxArroeUp'
-import styles from './styles.module.scss'
 
 export const Main = () => {
     return (
-        <>
-            <main className={styles.container}>
-                <div className={styles.void}></div>
-                <section>
-                    <AboutMe />
+        <main className="min-h-screen">
+            <Hero />
+            <Services />
                     <Skills />
-                    <ProjectsList/>
-                </section>
+            <ProjectsList />
+            <Contact />
                 <BoxArrowUp />
             </main>
-        </>
     )
 }

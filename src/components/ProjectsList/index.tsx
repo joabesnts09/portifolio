@@ -1,36 +1,40 @@
 'use client'
 import { projectsList } from '../../../public/data/projectsDb'
 import { ProjectsCard } from './ProjectCard'
-import styles from './style.module.scss'
 import { motion } from 'framer-motion'
-
 
 export const ProjectsList = () => {
     return (
-        <>
-            <section id="projects" className={styles.container}>
-                <div className={styles.boxTitle}>
-                    <motion.h2
-                        initial={{ opacity: 0, x: -100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -100 }}
-                        transition={{ duration: .5 }}   
-                    >
-                        ./Projetos
-                    </motion.h2>
-                </div>
-                <motion.div 
-                    className={styles.boxCard}
-                    initial={{ opacity: 0, x: 300 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 300 }}
-                    transition={{ duration: .5 }} 
-                    >
-                    {projectsList.map((project) => (
-                        <ProjectsCard buttonText={project.type === 'Front-End'? 'Ver site': 'Ver repositório'} key={project.id} project={project} />
+        <section id="projetos" className="py-20 px-4 md:px-8 lg:px-16">
+            <div className="container mx-auto">
+                <motion.h2
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="text-4xl md:text-5xl font-bold text-white mb-12"
+                >
+                    Projetos em Destaque
+                </motion.h2>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
+                    {projectsList.map((project, index) => (
+                        <motion.div
+                            key={project.id}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className="h-full"
+                        >
+                            <ProjectsCard 
+                                project={project} 
+                            />
+                        </motion.div>
                     ))}
-                </motion.div>
-            </section>
-        </>
+                </div>
+
+            </div>
+        </section>
     )
 }
