@@ -11,7 +11,7 @@ interface Service {
 const services: Service[] = [
     {
         title: 'Websites e Plataformas',
-        description: 'Especializado no desenvolvimento de interfaces modernas e responsivas usando React, Next.js e TypeScript',
+        description: 'Especializado no desenvolvimento de interfaces modernas e responsivas usando as principais tecnologias do mercado',
         technologies: ['Node.js', 'Python'],
         icon: '🖥️'
     },
